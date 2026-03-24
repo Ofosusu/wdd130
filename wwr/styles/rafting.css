@@ -28,6 +28,7 @@ main,
 footer {
     width: 840px;
     margin: 0 auto;
+    background-color: var(--secondary-color);
 
 }
 
