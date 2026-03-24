@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #055a05;
-    --secondary-color: #f4a261;
-    --accent1-color: #264653;
-    --accent2-color: #e9c46a;
+    --primary-color: #044404;
+    --secondary-color: #ffffff;
+    --accent1-color: #1f2f3a;
+    --accent2-color: #ffd166;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
 }
@@ -101,10 +101,10 @@ h1 {
 .socialmedia img {
     width: 36px;
     height: 36px;
-    transition: transform 0.2s ease, opacity 0.2s ease;
+
 }
 
 .socialmedia a:hover img {
-    transform: scale(1.2);
-    opacity: 0.8;
+    width: 20px;
+    height: 20px;
 }
