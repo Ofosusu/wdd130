@@ -1,15 +1,10 @@
 :root {
-    --primary-color: #044404;
-    --secondary-color: #ffffff;
-    --accent1-color: #1f2f3a;
-    --accent2-color: #ffd166;
+    --primary-color: #055a05;
+    --secondary-color: #f4a261;
+    --accent1-color: #264653;
+    --accent2-color: #e9c46a;
     --heading-font: "Times New Roman", "Georgia", serif;
     --body-font: Arial, Helvetica, sans-serif;
-}
-
-header {
-    background-color: var(--primary-color);
-    color: var(--accent2-color);
 }
 
 * {
@@ -28,7 +23,7 @@ main,
 footer {
     width: 840px;
     margin: 0 auto;
-    background-color: var(--secondary-color);
+
 }
 
 h1,
