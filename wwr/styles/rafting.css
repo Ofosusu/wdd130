@@ -7,6 +7,11 @@
     --body-font: Arial, Helvetica, sans-serif;
 }
 
+header {
+    background-color: var(--primary-color);
+    color: var(--accent2-color);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -48,14 +53,6 @@ article {
     position: relative;
 }
 
-.hero article {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 8px;
-}
-
 .hero img {
     display: block;
     width: 100%;
@@ -78,28 +75,13 @@ h1 {
     width: 125px;
 }
 
-.socialmedia {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    justify-content: center;
-    padding: 12px 0;
-}
-
 .socialmedia a {
     text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+
 }
 
 .socialmedia img {
     width: 36px;
     height: 36px;
 
-}
-
-.socialmedia a:hover img {
-    width: 20px;
-    height: 20px;
 }
