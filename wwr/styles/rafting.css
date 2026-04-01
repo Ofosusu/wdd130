@@ -196,9 +196,11 @@ h1 {
 footer {
     display: flex;
     border-radius: 0;
-    background-color: #9dbdc9;
+    background-color: var(--accent1-color);
     justify-content: center;
     position: relative;
+    color: #fff;
+    font-size: larger;
 
 }
 
