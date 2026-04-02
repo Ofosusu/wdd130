@@ -178,15 +178,12 @@ h1 {
     padding-top: 0%;
 }
 
-.figure-content {
-    flex: 1;
-    margin: 0;
-}
-
 .figure-content img {
     width: 100%;
     height: auto;
     border-radius: 5px;
+    flex: 1;
+    margin: 0;
 }
 
 .figure-content figcaption {
