@@ -8,9 +8,9 @@
   "editor.minimap.enabled": false,
   "editor.linkedEditing": true,
   "editor.quickSuggestions": {
-    "comments": "off",
-    "strings": "off",
-    "other": "on"
+    "other": "on",
+    "comments": "on",
+    "strings": "on"
   },
   "editor.parameterHints.enabled": false,
   "editor.suggestOnTriggerCharacters": false,
