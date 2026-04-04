@@ -30,8 +30,8 @@ header {
     grid-template-columns: auto 1fr;
     align-items: center;
     padding: 10px 20px;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    background-color: var(--accent1-color);
+
 }
 
 .logo img {
@@ -89,8 +89,6 @@ article {
     text-decoration: none;
 }
 
-
-
 .hero article {
     position: absolute;
     bottom: 0;
@@ -108,23 +106,10 @@ article {
     height: auto;
 }
 
-h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff;
-}
-
 .hero article img {
     float: right;
     width: 125px;
 }
-
-
 
 .history {
     max-width: 900px;
@@ -153,7 +138,6 @@ h1 {
     width: 100%;
     height: auto;
 }
-
 
 .adventure {
     padding: 20px;
@@ -187,8 +171,6 @@ h1 {
     font-size: medium;
 }
 
-
-
 footer {
     display: flex;
     background-color: var(--accent1-color);
@@ -212,9 +194,6 @@ footer p {
     height: 36px;
 }
 
-
-
-
 .company-info {
     text-align: center;
     margin: 24px 16px 16px;
@@ -230,6 +209,7 @@ footer p {
     margin: 2px 0;
     padding: 0;
 }
+
 .contact-layout {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -246,13 +226,11 @@ footer p {
     display: block;
 }
 
-
 .contact-layout form {
     display: flex;
     flex-direction: column;
     gap: 14px;
 }
-
 
 .form-row {
     display: grid;
@@ -296,14 +274,12 @@ footer p {
     font-size: 0.95rem;
 }
 
-
 .subscribe {
     display: flex;
     align-items: center;
     gap: 8px;
     font-size: 0.95rem;
 }
-
 
 .contact-layout form button {
     width: 100%;
@@ -318,7 +294,6 @@ footer p {
 .contact-layout form button:hover {
     background-color: #b8b8b8;
 }
-
 
 .employees {
     margin: 0 16px 24px;
