@@ -13,16 +13,17 @@
 
 <body>
 
+
     <header>
         <div class="logo">
-            <img id="logo" src="images/water.png" alt="rafting logo">
+            <img id="logo" src="images/water.png" alt="David Ofosu Amoah Rafting Company Logo">
         </div>
 
         <nav>
             <ul class="navigation">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
-                <li><a href="trips.html">Trips</a></li>
+                <li><a href="trips.html" class="active">Trips</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
@@ -31,51 +32,57 @@
     <main>
 
 
-        <section class="camp">
-            <h1> David Ofosu Amoah rafting company</h1>
-            <img src="images/appy.jpg" alt="rafting adventure">
-            <article>
-                <h2>Choose Your Adventure</h2>
-                <p>Experience the thrill of white water rafting in Ghana</p>
-            </article>
+        <section class="trips-hero">
+            <img src="images/appy.jpg" alt="Exciting white water rafting adventure in Ghana">
+            <div class="trips-hero-text">
+                <h1>Explore Our Rafting Adventures</h1>
+                <p>Thrilling white water rafting experiences for every skill level in Ghana</p>
+                <a href="contact.html" class="cta-button">Book Your Trip Today</a>
+            </div>
         </section>
 
 
         <section class="cta">
-            <h3>Ready for an Adventure?</h3>
-            <p>Contact us today to book your trip!</p>
-            <a href="contact.html" class="cta-button">Contact Us</a>
+            <h2>Ready for the Ultimate Adventure?</h2>
+            <p>Whether you're a first-timer or a seasoned rafter, we have the perfect trip for you.
+                Contact us today to reserve your spot on the river!</p>
+            <a href="contact.html" class="cta-button">Contact Us to Book</a>
         </section>
 
 
         <section class="trip-grid">
 
             <div class="trip">
-                <img src="images/rafffff.jpg" alt="Beginner rafting">
+                <img src="images/rafffff.jpg" alt="Beginner rafting on calm rapids">
                 <h3>Beginner Rapids</h3>
                 <p>This trip is perfect for beginners. Calm waters with small rapids make it safe
                     and fun for families and first-time rafters.</p>
+                <a href="contact.html" class="trip-book-btn">Book Now</a>
             </div>
 
             <div class="trip">
-                <img src="images/raffour.jpg" alt="Intermediate rafting">
+                <img src="images/raffour.jpg"
+                  alt="Intermediate rafting adventure with moderate rapids">
                 <h3>Intermediate Adventure</h3>
                 <p>Enjoy moderate rapids and exciting twists. This trip is great for those looking
                     for more thrill while still being manageable.</p>
+                <a href="contact.html" class="trip-book-btn">Book Now</a>
             </div>
 
             <div class="trip">
-                <img src="images/raffs.jpg" alt="Advanced rafting">
+                <img src="images/raffs.jpg"
+                  alt="Advanced extreme rapids rafting for experienced rafters">
                 <h3>Extreme Rapids</h3>
                 <p>For experienced rafters only. Fast currents and powerful rapids will give you the
                     ultimate adrenaline rush.</p>
+                <a href="contact.html" class="trip-book-btn">Book Now</a>
             </div>
 
         </section>
 
 
         <section class="trip-table">
-            <h2>Available Trips</h2>
+            <h2>Available Trips &amp; Pricing</h2>
 
             <table>
                 <thead>
@@ -113,20 +120,123 @@
 
         </section>
 
+
+        <section class="trip-info">
+            <h2>What's Included in Every Trip</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>🛡️ Safety First</h3>
+                    <p>All trips include certified safety gear, life jackets, and helmets. Our
+                        guides are trained in first aid and river rescue.</p>
+                </div>
+                <div class="info-card">
+                    <h3>🧑‍🏫 Expert Guides</h3>
+                    <p>Our experienced guides know the river inside out. They'll brief you before
+                        the trip and support you throughout your adventure.</p>
+                </div>
+                <div class="info-card">
+                    <h3>📸 Memories</h3>
+                    <p>We capture your adventure with photos during the trip. Take home
+                        unforgettable memories of your rafting experience.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="booking-section">
+            <h2>Book a Trip — Send Us an Inquiry</h2>
+            <p class="booking-intro">Fill in the form below and we'll get back to you within 24
+                hours to confirm your booking.</p>
+
+            <form action="submit_booking.html" method="get" class="booking-form">
+
+                <div class="form-row">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" name="fullname" placeholder="e.g. Kwame Mensah"
+                      required>
+                </div>
+
+                <div class="form-row">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="e.g. kwame@email.com"
+                      required>
+                </div>
+
+                <div class="form-row">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="e.g. +233 24 000 0000">
+                </div>
+
+                <div class="form-row">
+                    <label for="trip-select">Select Trip:</label>
+                    <select id="trip-select" name="trip" required>
+                        <option value="">-- Choose a Trip --</option>
+                        <option value="beginner">Beginner Rapids ($50)</option>
+                        <option value="intermediate">Intermediate Adventure ($100)</option>
+                        <option value="extreme">Extreme Rapids ($150)</option>
+                    </select>
+                </div>
+
+                <div class="form-row">
+                    <label for="trip-date">Preferred Date:</label>
+                    <input type="date" id="trip-date" name="trip-date" required>
+                </div>
+
+                <div class="form-row">
+                    <label for="group-size">Group Size:</label>
+                    <input type="number" id="group-size" name="group-size" min="1" max="20"
+                      placeholder="e.g. 4">
+                </div>
+
+                <div class="form-row">
+                    <label>Experience Level:</label>
+                    <div class="radio-options">
+                        <label><input type="radio" name="experience" value="none"> No
+                            experience</label>
+                        <label><input type="radio" name="experience" value="some"> Some
+                            experience</label>
+                        <label><input type="radio" name="experience" value="advanced">
+                            Advanced</label>
+                    </div>
+                </div>
+
+                <div class="form-row">
+                    <label for="message">Message / Questions:</label>
+                    <textarea id="message" name="message"
+                      placeholder="Any special requests or questions?"></textarea>
+                </div>
+
+                <div class="form-row subscribe-row">
+                    <label></label>
+                    <label class="subscribe">
+                        <input type="checkbox" name="newsletter" value="yes">
+                        Subscribe to our newsletter for deals and updates
+                    </label>
+                </div>
+
+                <div class="form-row">
+                    <label></label>
+                    <button type="submit">Submit Booking Inquiry</button>
+                </div>
+
+            </form>
+        </section>
+
     </main>
 
+
     <footer>
-        <p>© copyright 💧 2026 💧 David Ofosu Amoah rafting company.</p>
+        <p>© copyright 💧 2026 💧 David Ofosu Amoah Rafting Company.</p>
 
         <nav class="socialmedia">
             <a href="http://facebook.com">
                 <img src="images/facebook.svg" alt="Facebook Icon">
             </a>
             <a href="http://instagram.com">
-                <img src="images/instagram.svg" alt="instagram Icon">
+                <img src="images/instagram.svg" alt="Instagram Icon">
             </a>
             <a href="http://youtube.com">
-                <img src="images/youtube.svg" alt="youtube Icon">
+                <img src="images/youtube.svg" alt="YouTube Icon">
             </a>
         </nav>
     </footer>
