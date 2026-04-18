@@ -9,307 +9,6 @@
       content="Experience the thrill of white water rafting in Ghana with David Ofosu Amoah's Rafting Company. Book your adventure today!">
     <meta name="author" content="David Ofosu Amoah">
     <link rel="stylesheet" href="styles/rafting.css">
-    <style>
-        /* ── Index-page-only styles ── */
-
-        /* Hero */
-        .hero-home {
-            position: relative;
-            width: 100%;
-            overflow: hidden;
-            max-height: 520px;
-        }
-
-        .hero-home img {
-            width: 100%;
-            height: 520px;
-            object-fit: cover;
-            display: block;
-        }
-
-        .hero-home-text {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            background: linear-gradient(to top, rgba(0, 0, 0, 0.82) 70%, transparent);
-            padding: 50px 48px 40px;
-            color: #ffffff;
-        }
-
-        .hero-home-text h1 {
-            font-family: "Times New Roman", Georgia, serif;
-            font-size: 2.8rem;
-            color: #ffffff;
-            margin-bottom: 12px;
-            text-shadow: 1px 2px 8px rgba(0, 0, 0, 0.6);
-        }
-
-        .hero-home-text p {
-            font-size: 1.15rem;
-            color: #e8e8e8;
-            margin-bottom: 22px;
-            max-width: 580px;
-        }
-
-        /* Newsletter */
-        .newsletter {
-            background-color: #1a3a2a;
-            padding: 44px 24px;
-            text-align: center;
-        }
-
-        .newsletter h2 {
-            color: #e9c46a;
-            font-family: "Times New Roman", Georgia, serif;
-            font-size: 1.9rem;
-            margin-bottom: 8px;
-        }
-
-        .newsletter p {
-            color: #cce6d0;
-            font-size: 0.97rem;
-            margin-bottom: 24px;
-        }
-
-        .newsletter-form {
-            display: flex;
-            justify-content: center;
-            gap: 12px;
-            flex-wrap: wrap;
-            max-width: 560px;
-            margin: 0 auto;
-        }
-
-        .newsletter-form input[type="text"],
-        .newsletter-form input[type="email"] {
-            padding: 10px 14px;
-            border: 2px solid #e9c46a;
-            border-radius: 4px;
-            font-size: 0.95rem;
-            background-color: #243d2f;
-            color: #ffffff;
-            flex: 1 1 180px;
-            min-width: 160px;
-        }
-
-        .newsletter-form input::placeholder {
-            color: #a8c4b0;
-        }
-
-        .newsletter-form button {
-            padding: 10px 24px;
-            background-color: #e9c46a;
-            color: #1a3a2a;
-            border: none;
-            border-radius: 4px;
-            font-size: 0.97rem;
-            font-weight: bold;
-            cursor: pointer;
-            transition: background-color 0.2s;
-            white-space: nowrap;
-        }
-
-        .newsletter-form button:hover {
-            background-color: #d4a843;
-        }
-
-        /* Call to action – trips */
-        .home-cta {
-            text-align: center;
-            padding: 50px 24px;
-            background: linear-gradient(135deg, #e8f5e9 60%, #c8e6c9);
-            border-top: 4px solid #055a05;
-            border-bottom: 4px solid #055a05;
-        }
-
-        .home-cta h2 {
-            font-size: 2rem;
-            color: #055a05;
-            margin-bottom: 14px;
-            font-family: "Times New Roman", Georgia, serif;
-        }
-
-        .home-cta p {
-            font-size: 1.05rem;
-            color: #1a1a1a;
-            max-width: 620px;
-            margin: 0 auto 24px;
-            line-height: 1.7;
-        }
-
-        /* Offerings grid */
-        .offerings {
-            padding: 52px 24px;
-            background-color: #ffffff;
-        }
-
-        .offerings h2 {
-            text-align: center;
-            font-size: 1.9rem;
-            color: #055a05;
-            margin-bottom: 36px;
-            font-family: "Times New Roman", Georgia, serif;
-        }
-
-        .offerings-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 28px;
-            max-width: 1050px;
-            margin: 0 auto;
-        }
-
-        /* First card spans full width */
-        .offerings-grid .offer-card:first-child {
-            grid-column: 1 / -1;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 0;
-            border-radius: 8px;
-            overflow: hidden;
-        }
-
-        .offerings-grid .offer-card:first-child img {
-            height: 100%;
-            min-height: 260px;
-            width: 100%;
-            object-fit: cover;
-            border-radius: 0;
-        }
-
-        .offerings-grid .offer-card:first-child .offer-text {
-            padding: 36px 32px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            background-color: #1a3a2a;
-            color: #ffffff;
-        }
-
-        .offerings-grid .offer-card:first-child .offer-text h3 {
-            color: #e9c46a;
-            font-size: 1.5rem;
-            margin-bottom: 12px;
-        }
-
-        .offerings-grid .offer-card:first-child .offer-text p {
-            color: #cce6d0;
-            line-height: 1.7;
-            font-size: 0.97rem;
-        }
-
-        /* Regular cards */
-        .offer-card {
-            background-color: #f4f4f4;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-        }
-
-        .offer-card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .offer-text {
-            padding: 20px;
-            flex: 1;
-        }
-
-        .offer-text h3 {
-            font-family: "Times New Roman", Georgia, serif;
-            font-size: 1.2rem;
-            color: #1a3a2a;
-            margin-bottom: 8px;
-        }
-
-        .offer-text p {
-            font-size: 0.93rem;
-            color: #1a1a1a;
-            line-height: 1.6;
-        }
-
-        /* Why choose us */
-        .why-us {
-            background-color: #f9f9f9;
-            padding: 50px 24px;
-            border-top: 2px solid #ddd;
-        }
-
-        .why-us h2 {
-            text-align: center;
-            font-size: 1.9rem;
-            color: #055a05;
-            margin-bottom: 32px;
-            font-family: "Times New Roman", Georgia, serif;
-        }
-
-        .why-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            max-width: 950px;
-            margin: 0 auto;
-        }
-
-        .why-card {
-            background: #ffffff;
-            border: 1px solid #ddd;
-            border-radius: 8px;
-            padding: 24px 20px;
-            text-align: center;
-        }
-
-        .why-card .icon {
-            font-size: 2.2rem;
-            margin-bottom: 10px;
-        }
-
-        .why-card h3 {
-            font-family: "Times New Roman", Georgia, serif;
-            font-size: 1.05rem;
-            color: #055a05;
-            margin-bottom: 8px;
-        }
-
-        .why-card p {
-            font-size: 0.9rem;
-            color: #1a1a1a;
-            line-height: 1.6;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .hero-home-text h1 {
-                font-size: 1.7rem;
-            }
-
-            .offerings-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .offerings-grid .offer-card:first-child {
-                grid-template-columns: 1fr;
-            }
-
-            .offerings-grid .offer-card:first-child img {
-                min-height: 200px;
-            }
-
-            .why-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .newsletter-form {
-                flex-direction: column;
-                align-items: stretch;
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -321,7 +20,7 @@
 
         <nav>
             <ul class="navigation">
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="trips.html">Trips</a></li>
                 <li><a href="contact.html">Contact Us</a></li>
@@ -331,7 +30,6 @@
 
     <main>
 
-        <!-- 1. Hero image with absolute-positioned heading -->
         <section class="hero-home">
             <img src="images/appy.jpg" alt="Thrilling white water rafting adventure in Ghana">
             <div class="hero-home-text">
@@ -342,7 +40,6 @@
             </div>
         </section>
 
-        <!-- 2. Newsletter sign-up -->
         <section class="newsletter">
             <h2>Stay in the Current</h2>
             <p>Sign up for exclusive deals, trip updates, and river news delivered straight to your
@@ -354,7 +51,6 @@
             </form>
         </section>
 
-        <!-- 3. Call to action linking to trips.html -->
         <section class="home-cta">
             <h2>Your Next Adventure is Waiting</h2>
             <p>From calm beginner rapids to heart-pounding extreme runs, we have a trip for every
@@ -363,12 +59,10 @@
             <a href="trips.html" class="cta-button">View All Trips &amp; Pricing</a>
         </section>
 
-        <!-- 4. CSS Grid layout with 2+ images and content -->
         <section class="offerings">
             <h2>What We Offer</h2>
             <div class="offerings-grid">
 
-                <!-- Wide featured card -->
                 <div class="offer-card">
                     <img src="images/rafffff.jpg"
                       alt="Beginner friendly rafting on calm rapids in Ghana">
@@ -383,7 +77,6 @@
                     </div>
                 </div>
 
-                <!-- Card 2 -->
                 <div class="offer-card">
                     <img src="images/raffour.jpg"
                       alt="Intermediate rafting adventure with moderate rapids">
@@ -396,7 +89,6 @@
                     </div>
                 </div>
 
-                <!-- Card 3 -->
                 <div class="offer-card">
                     <img src="images/raffs.jpg"
                       alt="Extreme rapids rafting for advanced adventurers">
@@ -412,7 +104,6 @@
             </div>
         </section>
 
-        <!-- Why choose us -->
         <section class="why-us">
             <h2>Why Choose Us?</h2>
             <div class="why-grid">
